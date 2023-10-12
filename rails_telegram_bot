@@ -82,13 +82,6 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
 end
 RUBY
 
-file 'config/locales/en.yml', <<-YML
-en:
-  telegram_webhooks:
-    start:
-      hi: Hi there!
-YML
-
 environment <<-RUBY, env: :production
 # Set application domain, to be able to run `rake telegram:bot:set_webhook`
 # routes.default_url_options = {host: 'yourdomain.com', protocol: 'https'}
